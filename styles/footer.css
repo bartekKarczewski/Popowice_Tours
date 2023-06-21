@@ -1,0 +1,55 @@
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo {
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 1.5;
+  font-family: "Vollkorn", sans-serif;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+
+.links-container {
+  display: flex;
+  gap: 3rem;
+}
+
+figcaption {
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+figure {
+  border-left: 2px solid #f3f3f3;
+}
+
+figure ul {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-decoration: none;
+  color: #f3f3f3;
+  transition: all 0.2s ease-out;
+}
+
+.link:hover {
+  color: #fbe973;
+  transform: translateX(5px);
+}
