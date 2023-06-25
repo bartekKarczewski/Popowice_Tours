@@ -200,7 +200,7 @@
 }
 
 /* SECOND TIER */
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   html {
     font-size: 50%;
   }
@@ -238,7 +238,7 @@
     align-items: center;
   }
   .hero-img {
-    width: 80%;
+    width: 90%;
   }
 
   .hero-img img {
@@ -270,6 +270,35 @@
   .cards-container {
     gap: 1.5rem;
   }
+
+  .card {
+    width: 25rem;
+    height: 38rem;
+  }
+  .card .img-container {
+    height: 16rem;
+  }
+
+  .img-container h3 {
+    font-size: 2rem;
+  }
+
+  .tours .card ul li {
+    font-size: 1rem;
+  }
+
+  .price-new,
+  .price-now {
+    font-size: 3rem;
+  }
+
+  .price-before {
+    font-size: 1.5rem;
+  }
+
+  .card .btn-price {
+    font-size: 1.8rem;
+  }
   div.promo {
     right: -1rem;
   }
@@ -281,6 +310,31 @@
   }
   .testimonials-container {
     gap: 7rem 2rem;
+  }
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+  /* Hero section */
+
+  .hero-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .copy-content {
+    align-self: center;
+    transform: translateY(0);
+  }
+  .copy-content h1 {
+    font-size: 6rem;
+  }
+  .copy-content h2 {
+    font-size: 2rem;
+  }
+
+  .copy-content .btn {
+    font-size: 2rem;
+    padding: 2rem 5rem;
   }
 }
 
