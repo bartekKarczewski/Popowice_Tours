@@ -123,6 +123,7 @@ div.price {
 .submit-btn-text {
   position: relative;
   z-index: 10;
+  pointer-events: none;
 }
 
 .card .btn-price::before,

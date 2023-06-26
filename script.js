@@ -23,9 +23,7 @@ function scrollTo(event, section) {
 }
 
 function openForm() {
-  const selectedOption = document.getElementById(
-    `${event.target.dataset.tour}`
-  );
+  let selectedOption = document.getElementById(`${event.target.dataset.tour}`);
   form.style.display = "flex";
   selectedOption.setAttribute("selected", true);
 }
@@ -54,7 +52,7 @@ reviewButton.addEventListener("click", (event) => {
   scrollTo(event, reviewSection);
 });
 
-for (bookingBtn of bookingBtns) {
+for (const bookingBtn of bookingBtns) {
   bookingBtn.addEventListener("click", openForm);
 }
 
