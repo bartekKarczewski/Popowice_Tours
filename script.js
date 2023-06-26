@@ -59,3 +59,9 @@ for (bookingBtn of bookingBtns) {
 }
 
 closeModalBtn.addEventListener("click", closeModal);
+
+document.addEventListener("click", (event) => {
+  if (form == event.target) {
+    form.style.display = "none";
+  }
+});
