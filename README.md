@@ -5,6 +5,10 @@ Project was intended as a reintroduction to some basics for its creator who sadl
 Page was made with use of CSS Flexbox, CSS Grid and ES6 version of JavaScript.
 It ain't much but it's an honest work.
 
+## Demo:
+
+[Popowice Tours](https://bartekkarczewski.github.io/Popowice_Tours/)
+
 ## Technologies
 
 - HTML5
