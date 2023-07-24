@@ -11,11 +11,11 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 300;
   line-height: 1.9;
-  color: #444;
-  background-color: #f3f3f3;
+  color: #f3f3f3;
+  background-color: #0b051f;
 }
 
 section {
@@ -23,13 +23,4 @@ section {
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 15rem;
-}
-
-h2 {
-  font-family: "Vollkorn", sans-serif;
-}
-
-footer {
-  background-color: #222;
-  color: #f3f3f3;
 }
