@@ -16,6 +16,14 @@ body {
   line-height: 1.9;
   color: #f3f3f3;
   background-color: #0b051f;
+  display: grid;
+  grid-template-columns: repeat(12, 7.5rem);
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+main {
+  grid-column: 1/ -1;
 }
 
 section {

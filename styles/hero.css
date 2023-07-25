@@ -1,6 +1,6 @@
 section.hero {
-  background-color: #faf2bd;
   height: 85vh;
+  grid-column: 1 / -1;
 }
 
 .hero-container {
@@ -28,7 +28,6 @@ section.hero {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 10rem;
 }
 
 .copy-content h1 {
