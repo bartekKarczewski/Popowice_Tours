@@ -20,6 +20,7 @@ body {
   grid-template-columns: repeat(12, 7.5rem);
   grid-gap: 2rem;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main {
