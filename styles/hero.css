@@ -10,9 +10,9 @@ section.hero {
   width: 108rem;
   height: 108rem;
   z-index: -1;
-  filter: blur(180px);
+  filter: blur(200px);
   top: 15rem;
-  right: -60rem;
+  right: -75rem;
 }
 
 .small-blurred-oval {
@@ -35,7 +35,7 @@ section.hero {
 }
 
 .hero-img {
-  flex-basis: 50%;
+  flex-basis: 55%;
   display: flex;
   align-items: end;
 }
