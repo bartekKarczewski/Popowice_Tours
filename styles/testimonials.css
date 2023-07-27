@@ -1,40 +1,76 @@
 section.testimonials {
   margin: 0 auto;
   grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-.testimonials h2 {
+#testimonial-blurred-oval {
+  position: absolute;
+  width: 74rem;
+  height: 74rem;
+  border-radius: 50%;
+  background-color: rgba(235, 0, 255, 0.2);
+  filter: blur(160px);
+  z-index: -1;
+  left: -55rem;
+}
+
+#quotation {
+  position: absolute;
+  z-index: -1;
+  width: 21.6rem;
+  fill: white;
+  top: 30%;
+  left: 10%;
+}
+
+.headings-container {
+  width: 50%;
+  transform: translateY(-10rem);
+}
+
+.headings-container h2 {
   margin: 0 auto;
   text-align: left;
-  font-size: 3.5rem;
-  font-weight: normal;
-  text-decoration: underline;
-  max-width: 100rem;
+  font-size: 3.8rem;
+  font-weight: 100;
+}
+
+.headings-container h1 {
+  font-size: 7.1rem;
+  line-height: 1.1;
 }
 .testimonials-container {
+  width: 50%;
   margin: 0 auto;
   padding: 7rem 0 15rem 0;
-  max-width: 100rem;
   display: grid;
-  grid-template-columns: 30rem 30rem 30rem;
-  grid-template-rows: min-content min-content;
-  gap: 4rem 3rem;
+  grid-template-columns: 26rem 25rem;
+  grid-template-rows: 36rem 36rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 .testimonial {
-  background-color: #43434329;
-  box-shadow: 0px 0px 30px -20px rgba(66, 68, 90, 1);
-  display: flex;
+  background: linear-gradient(
+    32deg,
+    rgba(30, 25, 46, 1) 35%,
+    rgba(89, 78, 127, 1) 100%
+  );
+  border-radius: 10px;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
 }
 
 .testimonial-img-container {
-  transform: translateY(-2rem);
-  height: 10rem;
+  /* height: 10rem; */
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,19 +87,23 @@ section.testimonials {
 
 p.review {
   font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
 }
 
 p.name {
-  text-align: right;
   font-size: 1.5rem;
   font-weight: bold;
-  justify-self: end;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .star-rating {
   text-align: center;
   font-size: 2.2rem;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto;
 }
 
 .checked {
