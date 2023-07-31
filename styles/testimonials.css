@@ -49,7 +49,7 @@ section.testimonials {
   padding: 7rem 0 15rem 0;
   display: grid;
   grid-template-columns: 26rem 25rem;
-  grid-template-rows: 36rem 36rem;
+  grid-template-rows: min-content min-content;
   justify-content: center;
   gap: 2rem;
 }
@@ -61,15 +61,13 @@ section.testimonials {
     rgba(89, 78, 127, 1) 100%
   );
   border-radius: 10px;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  position: relative;
+  align-items: center;
+  padding: 0 2.5rem 3rem 2.5rem;
 }
 
 .testimonial-img-container {
-  /* height: 10rem; */
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -81,23 +79,18 @@ section.testimonials {
   box-shadow: 0px 0px 6px -3px rgba(66, 68, 90, 1);
 }
 
-.testimonial-copy {
-  padding: 1rem 3rem;
-}
-
 p.review {
   font-size: 1.2rem;
   font-weight: 100;
   text-align: center;
+  height: 10rem;
 }
 
 p.name {
   font-size: 1.5rem;
   font-weight: bold;
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  justify-self: end;
 }
 
 .star-rating {

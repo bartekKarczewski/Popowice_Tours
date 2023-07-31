@@ -1,12 +1,12 @@
 /* FIRST TIER */
 @media (max-width: 1200px) {
   html {
-    font-size: 56.25%;
+    font-size: 50%;
   }
 
   /* NAV */
   .logo {
-    font-size: 7rem;
+    font-size: 5.6rem;
   }
 
   nav ul li a {
@@ -15,16 +15,10 @@
   }
   /* HERO SECTION */
   .hero-img {
-    flex-basis: 80%;
+    flex-basis: 70%;
   }
 
   /* TOURS SECTION */
-  .tours h2 {
-    font-size: 4rem;
-  }
-  .cards-container {
-    gap: 4rem;
-  }
 
   .img-container h3 {
     font-size: 3rem;
@@ -85,8 +79,8 @@
     font-size: 4rem;
   }
 
-  .testimonials-container {
-    gap: 5rem 3rem;
+  .testimonial-img-container img {
+    width: 15rem;
   }
 
   p.review {
