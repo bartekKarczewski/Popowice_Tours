@@ -41,7 +41,7 @@ header ul li a {
 }
 
 #burgerBtn {
-  color: #333;
+  color: #f3f3f3;
   display: block;
 }
 .burger-nav {
@@ -55,7 +55,7 @@ header ul li a {
   background-color: #dcdcdc;
   width: 100%;
   z-index: 1;
-  transform: translateY(-30rem);
+  transform: translateY(-50rem);
   transition: all 0.2s ease-out;
 }
 
