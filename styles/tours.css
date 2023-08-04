@@ -35,11 +35,8 @@ section.tours {
   width: 24rem;
   height: 24rem;
   border-radius: 50%;
-  object-fit: contain;
   overflow: hidden;
-  margin: 0 auto;
-  transform: translateY(-5rem);
-  mix-blend-mode: luminosity;
+  margin: 2rem auto;
 }
 
 .card .img-container img {
@@ -53,8 +50,6 @@ section.tours {
   font-weight: 300;
   color: #f3f3f3;
   width: 100%;
-  font-family: "Vollkorn", sans-serif;
-  transform: translateY(-2rem);
 }
 
 div.promo {
@@ -81,6 +76,7 @@ div.promo span {
 
 .tours .card ul {
   list-style: square;
+  height: 10rem;
   padding: 0 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
