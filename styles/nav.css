@@ -24,7 +24,7 @@ header ul li a {
   display: block;
   text-decoration: none;
   color: inherit;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
   font-weight: 400;
   transition: all 0.2s ease-out;
   font-weight: 400;
@@ -70,4 +70,5 @@ header ul li a {
 
 .show-burger-menu {
   transform: translateY(0);
+  display: block;
 }

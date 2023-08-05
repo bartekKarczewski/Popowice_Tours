@@ -28,8 +28,7 @@ main {
 }
 
 section {
-  height: fit-content;
-  max-width: 100%;
+  /* height: fit-content; */
   margin: 0 auto;
   margin-bottom: 15rem;
 }

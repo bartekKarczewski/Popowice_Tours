@@ -1,101 +1,25 @@
-/* FIRST TIER */
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 
-  /* NAV */
-  .logo {
-    font-size: 5.6rem;
+  body {
+    grid-template-columns: repeat(12, 6.8rem);
   }
 
-  nav ul li a {
-    font-size: 2.5rem;
-    line-height: 1.8;
-  }
-  /* HERO SECTION */
-  .hero-img {
-    flex-basis: 70%;
-  }
-
-  /* TOURS SECTION */
-
-  .img-container h3 {
-    font-size: 3rem;
-    padding: 1.5rem 0;
-  }
-
-  .card ul li {
-    font-size: 1.5rem;
-  }
-
-  .price-new,
-  .price-now {
-    font-size: 5rem;
-  }
-
-  .price-before {
-    font-size: 2.5rem;
-  }
-
-  .card .btn-price {
-    font-size: 2rem;
-    height: 6rem;
-  }
-
-  /* FORM */
-  .tour-form {
-    width: 65rem;
-  }
-
-  .tour-form h3 {
-    font-size: 5rem;
-  }
-
-  label {
-    font-size: 2rem;
-  }
-
-  input,
-  select {
-    padding: 1rem 2rem;
-    font-size: 2rem;
-  }
-
-  .submit-form,
-  .submit-form::after,
-  .submit-form::before {
-    font-size: 2rem;
-    height: 7rem;
-  }
-
-  .submit-form::after,
-  .submit-form::before {
-    transform: translateY(7rem);
-  }
-
-  /* TESTIMONIALS SECTION */
-  .testimonials h2 {
-    font-size: 4rem;
-  }
-
+  /* TESTIMONIALS */
   .testimonial-img-container img {
-    width: 15rem;
+    width: 70%;
   }
 
   p.review {
     font-size: 1.2rem;
   }
-
-  p.name {
-    font-size: 1.8rem;
-  }
 }
 
-/* SECOND TIER */
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   html {
-    font-size: 47.5%;
+    font-size: 37%;
   }
 
   body {
@@ -103,220 +27,36 @@
   }
 
   /* NAV */
-  nav {
-    min-width: 100%;
-    align-items: center;
-  }
-  nav .regular-nav {
+
+  .regular-nav {
     display: none;
   }
 
   .burger-nav {
     display: block;
   }
-
-  .burger-overlay-menu {
-    display: block;
-  }
-
-  /* HERO SECTION */
-
-  .hero-container {
-    justify-content: flex-start;
-  }
-
-  .hero-container img {
-    top: 30rem;
-    width: 50%;
-  }
-
-  .copy-content {
-    margin-left: 5rem;
-  }
-
-  /* TOURS SECTION */
-  .tours h2 {
-    text-align: center;
-    font-size: 5rem;
-  }
-
-  .cards-container {
-    gap: 3rem;
-  }
-
-  .card .img-container {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  /* .cards-container {
-    gap: 1.5rem;
-  }
-
-  .card {
-    width: 25rem;
-    height: 38rem;
-  }
-
-  .img-container h3 {
-    font-size: 2rem;
-  }
-
-  .tours .card ul li {
-    font-size: 1rem;
-  }
-
-  .price-new,
-  .price-now {
-    font-size: 3rem;
-  }
-
-  .price-before {
-    font-size: 1.5rem;
-  }
-
-  .card .btn-price {
-    font-size: 1.8rem;
-  }
-  div.promo {
-    right: -1rem;
-  } */
-
-  /* Testimonials section */
-  .testimonials h2 {
-    text-align: center;
-    font-size: 5rem;
-  }
-
-  .headings-container h1 {
-    font-size: 6.5rem;
-  }
-
-  .testimonials-container {
-    grid-template-columns: 22.5rem 22.5rem;
-  }
-
-  p.review {
-    font-size: 1.1rem;
-  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 590px) {
   html {
-    font-size: 50%;
+    font-size: 30%;
   }
-  /* NAV */
-
-  nav {
-    min-width: 100%;
-    padding: 0 1rem;
-    align-items: center;
-    line-height: 2.5;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 25%;
   }
 
-  .logo {
-    font-size: 4rem;
+  body {
+    grid-template-columns: repeat(12, 4.5rem);
   }
 
-  .burger-nav i {
-    font-size: 7rem;
-    display: block;
-  }
-
-  /* HERO SECTION */
-
-  section.hero {
-    margin-bottom: 5rem;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hero-img {
-    flex-basis: 20%;
-  }
-
-  .copy-content {
-    transform: translateY(5rem);
-  }
-
-  .copy-content h1 {
-    font-size: 6rem;
-  }
-
-  .copy-content h2 {
-    font-size: 2.5rem;
-  }
-
-  .copy-content .btn {
-    font-size: 2.5rem;
-    padding: 2rem 6rem;
-  }
-
-  /* TOURS SECTION */
+  /* TOURS */
   .cards-container {
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
   }
-
-  div.promo {
-    right: -2.5rem;
-  }
-
-  /* TESTIMONIALS SECTION */
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .testimonial {
-    margin: 0 3rem;
-  }
-
-  .testimonial-img-container {
-    height: 8rem;
-    transform: translateY(-2.5rem);
-  }
-  .star-rating {
-    margin-top: 1rem;
-  }
-
-  /* FOOTER */
-  .container {
-    gap: 2rem;
-  }
-
-  .footer-logo {
-    font-size: 3rem;
-  }
-  .copyright {
-    text-align: center;
-  }
-}
-
-/* SMALLEST */
-@media (max-width: 360px) {
-  /* NAV */
-  ul.burger-menu li a {
-    font-size: 2rem;
-  }
-
-  /* TOURS SECTION */
-  .tour-form h3 {
-    font-size: 4rem;
-  }
-
-  .tour-form input,
-  .tour-form select {
-    padding: 0.5rem;
-  }
-
-  /* FOOTER */
-
-  figure ul .link {
-    font-size: 1rem;
+  .card {
+    width: 80%;
   }
 }
