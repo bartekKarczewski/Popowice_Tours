@@ -15,6 +15,11 @@
   p.review {
     font-size: 1.2rem;
   }
+
+  /* FORM */
+  .tour-form {
+    width: 55rem;
+  }
 }
 
 @media (max-width: 780px) {
@@ -35,6 +40,11 @@
   .burger-nav {
     display: block;
   }
+
+  /* FORM */
+  .tour-form {
+    width: 65rem;
+  }
 }
 
 @media (max-width: 590px) {
@@ -51,12 +61,117 @@
     grid-template-columns: repeat(12, 4.5rem);
   }
 
+  /* HERO */
+
+  section.hero {
+    margin: 10rem auto 20rem auto;
+  }
+  .hero-container img {
+    top: 40rem;
+  }
+
   /* TOURS */
   .cards-container {
     flex-direction: column;
     align-items: center;
+    gap: 6rem;
   }
   .card {
     width: 80%;
+    padding-bottom: 5rem;
+  }
+  .card .img-container {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .card h3 {
+    font-size: 6rem;
+  }
+
+  div.promo {
+    width: 12rem;
+    height: 12rem;
+    top: -4.5rem;
+    right: -4.5rem;
+  }
+
+  div.promo span {
+    font-size: 3rem;
+  }
+
+  .tours .card ul {
+    height: 25rem;
+    font-size: 3rem;
+    max-width: 80%;
+  }
+
+  .price-new,
+  .price-now {
+    font-size: 8rem;
+  }
+
+  .price-before {
+    font-size: 3rem;
+  }
+
+  .card .btn-price,
+  .submit-form {
+    width: 35rem;
+    height: 8rem;
+    font-size: 3rem;
+  }
+
+  /* FORM */
+  .tour-form {
+    width: 80rem;
+    padding-bottom: 8rem;
+  }
+
+  .tour-form h3 {
+    font-size: 7rem;
+  }
+
+  label {
+    font-size: 3.5rem;
+  }
+
+  input,
+  select {
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .people {
+    margin-top: 7rem;
+  }
+
+  .close-overlay {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .submit-form {
+    width: 50rem;
+    height: 10rem;
+    font-size: 3.5rem;
+  }
+  /* TESTIMONIALS */
+  section.testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headings-container {
+    width: 100%;
+  }
+
+  #quotation {
+    top: 0%;
+    left: 10%;
+  }
+
+  .testimonials-container {
+    width: 100%;
   }
 }
