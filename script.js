@@ -11,8 +11,8 @@ const burgerOval = document.querySelector(".burger-menu-oval");
 const burgerBtn = document.getElementById("burgerBtn");
 
 const heroSectionBtn = document.querySelector(".btn");
-const toursButton = document.getElementById("toursBtn");
-const reviewButton = document.getElementById("reviewBtn");
+const toursButtons = document.querySelectorAll(".toursBtn");
+const reviewButtons = document.querySelectorAll(".reviewBtn");
 
 const bookingBtns = document.querySelectorAll(".btn-price");
 
@@ -51,13 +51,18 @@ burgerOverlay.addEventListener("click", (event) => {
 heroSectionBtn.addEventListener("click", (event) => {
   scrollTo(event, toursSection);
 });
-toursButton.addEventListener("click", (event) => {
-  scrollTo(event, toursSection);
-});
+for (const tourBtn of toursButtons) {
+  tourBtn.addEventListener("click", (event) => {
+    scrollTo(event, toursSection);
+    burgerOverlay.classList.remove("show-burger-menu");
+  });
+}
 
-reviewButton.addEventListener("click", (event) => {
-  scrollTo(event, reviewSection);
-});
+for (const reviewBtn of reviewButtons) {
+  reviewBtn.addEventListener("click", (event) => {
+    scrollTo(event, reviewSection);
+  });
+}
 
 for (const bookingBtn of bookingBtns) {
   bookingBtn.addEventListener("click", openForm);

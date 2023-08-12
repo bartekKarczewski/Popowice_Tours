@@ -12,6 +12,7 @@ footer {
   filter: blur(120px);
   z-index: -1;
   right: -30vw;
+  bottom: 0;
 }
 
 .container {
