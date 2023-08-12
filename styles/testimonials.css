@@ -83,7 +83,7 @@ p.review {
   font-size: 1.4rem;
   font-weight: 100;
   text-align: center;
-  height: 10rem;
+  min-height: 16rem;
   line-height: 1.2em;
 }
 
@@ -91,7 +91,6 @@ p.name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  justify-self: end;
 }
 
 .star-rating {

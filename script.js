@@ -4,7 +4,8 @@ const toursSection = document.querySelector(".tours");
 const reviewSection = document.querySelector(".testimonials");
 
 const form = document.querySelector(".tour-form-overlay");
-const burgerOverlay = document.querySelector(".burger-overlay-menu");
+const burgerOverlay = document.querySelector(".burger-overlay");
+const burgerOval = document.querySelector(".burger-menu-oval");
 //BUTTONS
 
 const burgerBtn = document.getElementById("burgerBtn");
@@ -39,6 +40,12 @@ function closeModal() {
 //Event listeners
 burgerBtn.addEventListener("click", (event) => {
   burgerOverlay.classList.toggle("show-burger-menu");
+});
+
+burgerOverlay.addEventListener("click", (event) => {
+  if (event.target === burgerOverlay) {
+    burgerOverlay.classList.remove("show-burger-menu");
+  }
 });
 
 heroSectionBtn.addEventListener("click", (event) => {

@@ -45,30 +45,78 @@ header ul li a {
   display: block;
 }
 .burger-nav {
+  position: relative;
   display: none;
+  z-index: 30;
   font-size: 10rem;
 }
 
-.burger-overlay-menu {
+/* .burger-overlay-menu {
+  visibility: hidden;
+  position: relative;
+  filter: opacity(0);
+  transform: translateX(30rem);
+  transition: all 0.5s ease-in-out;
+} */
+
+.burger-overlay {
   display: none;
-  position: absolute;
-  background-color: #dcdcdc;
-  width: 100%;
-  z-index: 1;
-  transform: translateY(-50rem);
-  transition: all 0.2s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000b0;
+  z-index: 10;
+  transition: all 0.5s ease-out;
 }
 
 .burger-menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
   border: none;
-  padding: 2rem 6rem;
+  list-style: none;
+  text-align: right;
 }
 
 .burger-menu li a {
-  font-size: 3rem;
+  font-size: 8rem;
+  line-height: 1.5em;
+  transition: transform 0.2s ease-in;
+  transform: translateX(0);
+}
+
+.burger-menu li a:hover {
+  transform: translateX(-5px);
+  color: #00ffe0;
 }
 
 .show-burger-menu {
-  transform: translateY(0);
+  animation: show 500ms;
   display: block;
+}
+.hide-burger-menu {
+  animation: hide 500ms;
+  display: none;
+}
+
+@keyframes show {
+  from {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {
+    display: none;
+  }
+  to {
+    opacity: 0;
+  }
 }

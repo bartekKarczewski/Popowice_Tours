@@ -81,8 +81,8 @@
     padding-bottom: 5rem;
   }
   .card .img-container {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
   }
 
   .card h3 {
@@ -173,5 +173,25 @@
 
   .testimonials-container {
     width: 100%;
+  }
+
+  .testimonial {
+    padding: 0 4rem 3rem 4rem;
+  }
+
+  .testimonial-img-container img {
+    width: 55%;
+  }
+
+  p.review {
+    font-size: 2.2rem;
+  }
+
+  p.name {
+    font-size: 2.5rem;
+  }
+
+  .star-rating {
+    font-size: 3.5rem;
   }
 }
