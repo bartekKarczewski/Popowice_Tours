@@ -4,14 +4,15 @@ const toursSection = document.querySelector(".tours");
 const reviewSection = document.querySelector(".testimonials");
 
 const form = document.querySelector(".tour-form-overlay");
-const burgerOverlay = document.querySelector(".burger-overlay-menu");
+const burgerOverlay = document.querySelector(".burger-overlay");
+const burgerOval = document.querySelector(".burger-menu-oval");
 //BUTTONS
 
 const burgerBtn = document.getElementById("burgerBtn");
 
 const heroSectionBtn = document.querySelector(".btn");
-const toursButton = document.getElementById("toursBtn");
-const reviewButton = document.getElementById("reviewBtn");
+const toursButtons = document.querySelectorAll(".toursBtn");
+const reviewButtons = document.querySelectorAll(".reviewBtn");
 
 const bookingBtns = document.querySelectorAll(".btn-price");
 
@@ -41,16 +42,27 @@ burgerBtn.addEventListener("click", (event) => {
   burgerOverlay.classList.toggle("show-burger-menu");
 });
 
+burgerOverlay.addEventListener("click", (event) => {
+  if (event.target === burgerOverlay) {
+    burgerOverlay.classList.remove("show-burger-menu");
+  }
+});
+
 heroSectionBtn.addEventListener("click", (event) => {
   scrollTo(event, toursSection);
 });
-toursButton.addEventListener("click", (event) => {
-  scrollTo(event, toursSection);
-});
+for (const tourBtn of toursButtons) {
+  tourBtn.addEventListener("click", (event) => {
+    scrollTo(event, toursSection);
+    burgerOverlay.classList.remove("show-burger-menu");
+  });
+}
 
-reviewButton.addEventListener("click", (event) => {
-  scrollTo(event, reviewSection);
-});
+for (const reviewBtn of reviewButtons) {
+  reviewBtn.addEventListener("click", (event) => {
+    scrollTo(event, reviewSection);
+  });
+}
 
 for (const bookingBtn of bookingBtns) {
   bookingBtn.addEventListener("click", openForm);

@@ -1,70 +1,122 @@
+header {
+  grid-column: 1 / -1;
+}
 nav {
   position: relative;
-  background-color: #f3f3f3;
-  margin: 0 auto;
+  margin: 5rem auto 0;
   padding: 1rem 0;
-  max-width: 100rem;
+  width: 100%;
   z-index: 20;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-header ul {
+header nav ul {
+  display: flex;
   list-style: none;
   text-align: right;
-  border-right: 0.5rem solid #444;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 header ul li a {
+  margin-right: 2rem;
   display: block;
   text-decoration: none;
   color: inherit;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+  font-weight: 400;
   transition: all 0.2s ease-out;
-  font-weight: bold;
-}
-
-header ul li a:hover {
-  transform: translateX(-1rem);
-  color: #000;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
 }
 
 .logo {
-  font-size: 5rem;
-  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 5.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
   cursor: pointer;
-  font-family: "Vollkorn", sans-serif;
 }
 
 #burgerBtn {
-  color: #333;
+  color: #f3f3f3;
   display: block;
 }
 .burger-nav {
+  position: relative;
   display: none;
+  z-index: 30;
   font-size: 10rem;
 }
 
-.burger-overlay-menu {
+/* .burger-overlay-menu {
+  visibility: hidden;
+  position: relative;
+  filter: opacity(0);
+  transform: translateX(30rem);
+  transition: all 0.5s ease-in-out;
+} */
+
+.burger-overlay {
   display: none;
-  position: absolute;
-  background-color: #dcdcdc;
-  width: 100%;
-  z-index: 1;
-  transform: translateY(-30rem);
-  transition: all 0.2s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000b0;
+  z-index: 10;
+  transition: all 0.5s ease-out;
 }
 
 .burger-menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
   border: none;
-  padding: 2rem 6rem;
+  list-style: none;
+  text-align: right;
 }
 
 .burger-menu li a {
-  font-size: 3rem;
+  font-size: 8rem;
+  line-height: 1.5em;
+  transition: transform 0.2s ease-in;
+  transform: translateX(0);
+}
+
+.burger-menu li a:hover {
+  transform: translateX(-5px);
+  color: #00ffe0;
 }
 
 .show-burger-menu {
-  transform: translateY(0);
+  animation: show 500ms;
+  display: block;
+}
+.hide-burger-menu {
+  animation: hide 500ms;
+  display: none;
+}
+
+@keyframes show {
+  from {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {
+    display: none;
+  }
+  to {
+    opacity: 0;
+  }
 }

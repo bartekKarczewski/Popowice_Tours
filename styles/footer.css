@@ -1,7 +1,24 @@
+footer {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.footer-blurred-oval {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  background-color: #00ffe0;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  right: -30vw;
+  bottom: 0;
+}
+
 .container {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   padding: 5rem 0;
 }
 
@@ -12,12 +29,19 @@
 }
 
 .footer-logo {
-  text-align: center;
-  font-size: 4rem;
-  text-decoration: underline;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.6rem;
+  letter-spacing: 0.1em;
   cursor: pointer;
   line-height: 1.5;
-  font-family: "Vollkorn", sans-serif;
+}
+
+p.copyright {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .links-container {
@@ -31,6 +55,7 @@ figcaption {
 }
 
 figure {
+  padding-left: 1rem;
   border-left: 2px solid #f3f3f3;
 }
 
@@ -49,6 +74,6 @@ figure ul {
 }
 
 .link:hover {
-  color: #fbe973;
+  color: #00ffe0;
   transform: translateX(5px);
 }

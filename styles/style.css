@@ -5,31 +5,30 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 52.5%;
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 300;
   line-height: 1.9;
-  color: #444;
-  background-color: #f3f3f3;
+  color: #f3f3f3;
+  background-color: #0b051f;
+  display: grid;
+  grid-template-columns: repeat(12, 7.5rem);
+  grid-gap: 2rem;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+main {
+  grid-column: 1/ -1;
 }
 
 section {
-  height: fit-content;
-  max-width: 100%;
+  /* height: fit-content; */
   margin: 0 auto;
   margin-bottom: 15rem;
-}
-
-h2 {
-  font-family: "Vollkorn", sans-serif;
-}
-
-footer {
-  background-color: #222;
-  color: #f3f3f3;
 }

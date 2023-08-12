@@ -11,13 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700&family=Zilla+Slab:wght@300;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -39,10 +33,10 @@
     <header>
       <nav>
         <div class="logo">Popowice</div>
-        <ul>
-          <li><a href="#" id="homeBtn">Home</a></li>
-          <li><a href="#" id="toursBtn">Tours</a></li>
-          <li><a href="#" id="reviewBtn">Testimonials</a></li>
+        <ul class="regular-nav">
+          <li><a href="#" class="homeBtn">Home</a></li>
+          <li><a href="#" class="toursBtn">Tours</a></li>
+          <li><a href="#" class="reviewBtn">Testimonials</a></li>
         </ul>
         <!-- <span class="nav-line"></span> -->
         <!-- BURGER MENU -->
@@ -50,268 +44,216 @@
           <i class="fa fa-solid fa-bars" id="burgerBtn"></i>
         </div>
       </nav>
-      <div class="burger-overlay-menu">
+      <div class="burger-overlay">
+        <ul class="burger-menu">
+          <li><a href="#" class="homeBtn">Home</a></li>
+          <li><a href="#" class="toursBtn">Tours</a></li>
+          <li><a href="#" class="reviewBtn">Testimonials</a></li>
+        </ul>
+      </div>
+      <!-- <div class="burger-overlay-menu">
         <ul class="burger-menu">
           <li><a href="#" id="homeBtn">Home</a></li>
           <li><a href="#" id="toursBtn">Tours</a></li>
           <li><a href="#" id="reviewBtn">Testimonials</a></li>
         </ul>
-      </div>
+      </div> -->
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="copy-content">
-            <h1>DISCOVER POPOWICE</h1>
-            <h2>Wrocław’s district like none other</h2>
-            <button class="btn">Tours</button>
-          </div>
-          <div class="hero-img">
-            <img src="img/sedesowiec_no_bg.png" alt="" />
-          </div>
+    <section class="hero">
+      <div class="blurred-oval"></div>
+      <!-- <div class="small-blurred-oval"></div> -->
+      <!-- <div class="hero-img">
+        <img src="img/sedesowiec_no_bg.png" alt="" />
+      </div> -->
+      <div class="hero-container">
+        <div class="copy-content">
+          <h1>Discover Most Beautiful District</h1>
+          <h2>Wrocław’s district like none other</h2>
+          <button class="btn">learn more</button>
         </div>
-        <!-- <div class="copy">
-          <div class="copy-content">
-            <h1>DISCOVER POPOWICE</h1>
-            <h2>Wrocław’s district like none other</h2>
-            <button class="btn">Tours</button>
+        <img src="img/backpack_nobg.png" alt="" />
+      </div>
+    </section>
+    <section class="tours">
+      <h2>Tours</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="promo">
+            <span>-25%</span>
           </div>
-        </div> -->
-      </section>
-      <section class="tours">
-        <h2>Tours</h2>
-        <div class="cards-container">
-          <div class="card">
-            <div class="promo">
-              <span>-25%</span>
-            </div>
-            <div class="card-copy">
-              <div class="img-container">
-                <img src="img/culture.jpg" alt="" />
-                <h3>District's Culture</h3>
-              </div>
-              <ul>
-                <li>Discovering monuments</li>
-                <li>Local cuisine and drinks</li>
-                <li>Meeting with district's elders</li>
-              </ul>
-            </div>
-            <div>
-              <div class="price">
-                <p class="price-new">75,99</p>
-                <p class="price-before">99,99</p>
-              </div>
-              <button class="btn-price" data-tour="district">
-                <span>Book Now</span>
-              </button>
-            </div>
+          <div class="img-container">
+            <img src="img/culture.jpg" alt="" />
           </div>
-          <div class="card">
-            <div class="card-copy">
-              <div class="img-container">
-                <img src="img/park.jpg" alt="" />
-                <h3>Park Popowice</h3>
-              </div>
-              <ul>
-                <li>Beautiful fauna & flora</li>
-                <li>"Bench evening" experience</li>
-                <li>River bank stroll</li>
-              </ul>
-            </div>
-            <div>
-              <div class="price">
-                <p class="price-now">59,99</p>
-              </div>
-              <button class="btn-price" data-tour="park">
-                <span>Book Now</span>
-              </button>
-            </div>
+          <h3>District's Culture</h3>
+          <ul>
+            <li>Discovering monuments</li>
+            <li>Local cuisine and drinks</li>
+            <li>Meeting with district's elders</li>
+          </ul>
+          <div class="price">
+            <p class="price-new">75,99</p>
+            <p class="price-before">99,99</p>
           </div>
-          <div class="card">
-            <div class="promo">
-              <span>-50%</span>
-            </div>
-            <div class="card-copy">
-              <div class="img-container">
-                <img src="img/new_architecture.jpg" alt="" />
-                <h3>Architecture</h3>
-              </div>
-              <ul>
-                <li>Post-soviet architecture</li>
-                <li>Modern urban solutions</li>
-                <li>Experience typical district's balcony</li>
-              </ul>
-            </div>
-            <div>
-              <div class="price">
-                <p class="price-new">29,99</p>
-                <p class="price-before">59,99</p>
-              </div>
-              <button class="btn-price" data-tour="architecture">
-                <span>Book Now</span>
-              </button>
-            </div>
-          </div>
+          <button class="btn-price" data-tour="district">
+            <span>Book Now</span>
+          </button>
         </div>
-        <div class="tour-form-overlay">
-          <form action="" class="tour-form">
-            <h3>Perfect choice!</h3>
-            <label for="tour-pick">Tour</label>
-            <!-- <input type="text" id="tour-pick" name="tour-pick" /> -->
-            <select name="tour-pick" id="tour-pick">
-              <option value="district" id="district">District's Culture</option>
-              <option value="park" id="park">Park Popowice</option>
-              <option value="architecture" id="architecture">
-                Architecture
-              </option>
-            </select>
-            <label for="tour-date">Date</label>
-            <input type="date" id="tour-date" name="tour-date" />
-            <div class="people">
-              <label for="adults">Adults</label>
-              <input type="number" min="0" max="10" id="adults" name="adults" />
-              <label for="children">Children</label>
-              <input
-                type="number"
-                min="0"
-                max="10"
-                id="children"
-                name="children"
-              />
-            </div>
-            <button class="submit-form">
-              <span class="submit-btn-text">Check availability</span>
-            </button>
-            <div class="close-overlay"></div>
-          </form>
+        <div class="card">
+          <div class="img-container">
+            <img src="img/park.jpg" alt="" />
+          </div>
+          <h3>Park Popowice</h3>
+          <ul>
+            <li>Beautiful fauna & flora</li>
+            <li>"Bench evening" experience</li>
+            <li>River bank stroll</li>
+          </ul>
+          <div class="price">
+            <p class="price-now">59,99</p>
+          </div>
+          <button class="btn-price" data-tour="park">
+            <span>Book Now</span>
+          </button>
         </div>
-      </section>
-      <section class="testimonials">
+        <div class="card">
+          <div class="promo">
+            <span>-50%</span>
+          </div>
+          <div class="img-container">
+            <img src="img/new_architecture.jpg" alt="" />
+          </div>
+          <h3>Architecture</h3>
+          <ul>
+            <li>Post-soviet architecture</li>
+            <li>Modern urban solutions</li>
+            <li>Experience typical district's balcony</li>
+          </ul>
+          <div class="price">
+            <p class="price-new">29,99</p>
+            <p class="price-before">59,99</p>
+          </div>
+          <button class="btn-price" data-tour="architecture">
+            <span>Book Now</span>
+          </button>
+        </div>
+      </div>
+      <div class="tour-form-overlay">
+        <form action="" class="tour-form">
+          <h3>Perfect choice!</h3>
+          <label for="tour-pick">Tour</label>
+          <!-- <input type="text" id="tour-pick" name="tour-pick" /> -->
+          <select name="tour-pick" id="tour-pick">
+            <option value="district" id="district">District's Culture</option>
+            <option value="park" id="park">Park Popowice</option>
+            <option value="architecture" id="architecture">Architecture</option>
+          </select>
+          <label for="tour-date">Date</label>
+          <input type="date" id="tour-date" name="tour-date" />
+          <div class="people">
+            <label for="adults">Adults</label>
+            <input type="number" min="0" max="10" id="adults" name="adults" />
+            <label for="children">Children</label>
+            <input
+              type="number"
+              min="0"
+              max="10"
+              id="children"
+              name="children"
+            />
+          </div>
+          <button class="submit-form">
+            <span class="submit-btn-text">Check availability</span>
+          </button>
+          <div class="close-overlay"></div>
+        </form>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div id="testimonial-blurred-oval"></div>
+      <img src="img/quotation-marks.svg" alt="quotation marks" id="quotation" />
+      <div class="headings-container">
         <h2>Testimonials</h2>
-        <div class="testimonials-container">
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_1.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p class="review">
-                "Fantastic tour of Popowice district in Wroclaw! Rich history,
-                stunning architecture, and an enthusiastic guide. Can't wait to
-                go back"
-              </p>
-              <p class="name">Jared</p>
-            </div>
+        <h1>
+          Here's What<br />
+          Our Customers <br />Say
+        </h1>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="testimonial-img-container">
+            <img src="img/user_1.jpg" alt="" />
           </div>
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_2.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p class="review">
-                "Exploring Popowice Park in Wroclaw was a refreshing escape into
-                nature. I enjoyed leisurely walks surrounded by stunning
-                landscapes."
-              </p>
-              <p class="name">Gerald</p>
-            </div>
+
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
           </div>
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_3.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-              <p class="review">
-                "I was in awe of the architectural wonders in Popowice district,
-                learning fascinating design insights and being mesmerized by
-                their beauty."
-              </p>
-              <p class="name">Samsara</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_4.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p class="review">
-                "I immersed myself in the vibrant local culture of Popowice
-                district in Wroclaw, indulging in art, music, and delightful
-                culinary experiences."
-              </p>
-              <p class="name">Tahika</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_5.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p class="review">
-                "The architectural adventure through Popowice district was a
-                captivating experience, definitely recommend this one!"
-              </p>
-              <p class="name">Jonathan</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-img-container">
-              <img src="img/user_6.jpg" alt="" />
-            </div>
-            <div class="testimonial-copy">
-              <div class="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-              <p class="review">
-                "I had an amazing journey through Popowice district in Wroclaw,
-                discovering hidden gems and being captivated by its fascinating
-                history."
-              </p>
-              <p class="name">Toby</p>
-            </div>
-          </div>
+          <p class="review">
+            "Fantastic tour of Popowice district in Wroclaw! Rich history,
+            stunning architecture, and an enthusiastic guide. Can't wait to go
+            back"
+          </p>
+          <p class="name">Jared</p>
         </div>
-      </section>
-    </main>
+        <div class="testimonial">
+          <div class="testimonial-img-container">
+            <img src="img/user_2.jpg" alt="" />
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="review">
+            "Exploring Popowice Park in Wroclaw was a refreshing escape into
+            nature. I enjoyed walks surrounded by stunning flora."
+          </p>
+          <p class="name">Gerald</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-img-container">
+            <img src="img/user_3.jpg" alt="" />
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="review">
+            "I was in awe of the architectural wonders in Popowice district,
+            learning fascinating design insights and being mesmerized by their
+            beauty."
+          </p>
+          <p class="name">Samsara</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-img-container">
+            <img src="img/user_4.jpg" alt="" />
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="review">
+            "I immersed myself in the vibrant local culture of Popowice district
+            in Wroclaw, indulging in art, music, and food."
+          </p>
+          <p class="name">Tahika</p>
+        </div>
+      </div>
+    </section>
     <footer>
+      <div class="footer-blurred-oval"></div>
       <div class="container">
         <div class="logo-container">
           <div class="footer-logo">Popowice</div>
