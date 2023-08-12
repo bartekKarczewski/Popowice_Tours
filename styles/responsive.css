@@ -41,6 +41,12 @@
     display: block;
   }
 
+  /* HERO */
+  .copy-content .btn {
+    font-size: 3rem;
+    padding: 3rem 7rem;
+  }
+
   /* FORM */
   .tour-form {
     width: 65rem;
@@ -71,6 +77,9 @@
   }
 
   /* TOURS */
+  section.tours {
+    padding-bottom: 25rem;
+  }
   .cards-container {
     flex-direction: column;
     align-items: center;
@@ -184,7 +193,8 @@
   }
 
   p.review {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
+    min-height: 25rem;
   }
 
   p.name {
@@ -193,5 +203,29 @@
 
   .star-rating {
     font-size: 3.5rem;
+  }
+  /* FOOTER */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    text-align: center;
+    font-size: 6rem;
+  }
+  p.copyright {
+    font-size: 2rem;
+  }
+
+  .links-container {
+    gap: 13rem;
+  }
+
+  figcaption {
+    font-size: 3.5rem;
+  }
+
+  .link {
+    font-size: 2.5rem;
   }
 }
