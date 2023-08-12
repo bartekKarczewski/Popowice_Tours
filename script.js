@@ -61,6 +61,7 @@ for (const tourBtn of toursButtons) {
 for (const reviewBtn of reviewButtons) {
   reviewBtn.addEventListener("click", (event) => {
     scrollTo(event, reviewSection);
+    burgerOverlay.classList.remove("show-burger-menu");
   });
 }
 
