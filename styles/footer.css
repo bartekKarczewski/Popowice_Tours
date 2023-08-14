@@ -1,18 +1,16 @@
 footer {
   grid-column: 1 / -1;
-  position: relative;
 }
 
 .footer-blurred-oval {
   position: absolute;
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 30vw;
+  border-radius: 15vw 0 0 15vw;
   background-color: #00ffe0;
-  border-radius: 50%;
   filter: blur(120px);
+  right: 0;
   z-index: -1;
-  right: -30vw;
-  bottom: 0;
 }
 
 .container {

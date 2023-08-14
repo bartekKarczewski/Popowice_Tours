@@ -6,15 +6,15 @@ section.testimonials {
   position: relative;
 }
 
-#testimonial-blurred-oval {
+.testimonial-blurred-oval {
   position: absolute;
-  width: 60vw;
+  width: 40vw;
   height: 60vw;
-  border-radius: 50%;
+  border-radius: 0 40vw 40vw 0;
   background-color: rgba(235, 0, 255, 0.2);
+  left: -20rem;
   filter: blur(160px);
   z-index: -1;
-  left: -45vw;
 }
 
 #quotation {
