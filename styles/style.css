@@ -16,6 +16,7 @@ body {
   line-height: 1.9;
   color: #f3f3f3;
   background-color: #0b051f;
+
   display: grid;
   grid-template-columns: repeat(12, 7.5rem);
   grid-gap: 2rem;
@@ -30,4 +31,30 @@ section {
   /* height: fit-content; */
   margin: 0 auto;
   margin-bottom: 15rem;
+}
+
+.bgc {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(
+        at 18% 99%,
+        rgb(223, 229, 113) 0px,
+        transparent 50%
+      )
+      repeat scroll 0% 0%,
+    radial-gradient(at 97% 8%, rgb(118, 249, 173) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 79% 82%, rgb(233, 109, 131) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 96% 10%, rgb(222, 81, 251) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 42% 20%, rgb(116, 240, 251) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    radial-gradient(at 4% 49%, rgb(203, 88, 218) 0px, transparent 50%) repeat
+      scroll 0% 0%,
+    rgba(0, 0, 0, 0)
+      radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat
+      scroll 0% 0%;
 }
