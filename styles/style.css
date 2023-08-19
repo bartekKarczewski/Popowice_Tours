@@ -38,7 +38,7 @@ section {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: radial-gradient(
+  /* background: radial-gradient(
         at 18% 99%,
         rgb(223, 229, 113) 0px,
         transparent 50%
@@ -56,5 +56,17 @@ section {
       scroll 0% 0%,
     rgba(0, 0, 0, 0)
       radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat
-      scroll 0% 0%;
+      scroll 0% 0%; */
+  background-color: #ffd399;
+  background-image: radial-gradient(
+      at 92% 75%,
+      hsla(211, 80%, 66%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 70% 15%, hsla(150, 66%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 16% 16%, hsla(273, 74%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 25% 91%, hsla(6, 73%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 28%, hsla(292, 76%, 78%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 41%, hsla(336, 91%, 78%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 55%, hsla(78, 69%, 74%, 1) 0px, transparent 50%);
 }
